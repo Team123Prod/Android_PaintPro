@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="plugins_prompt">PaintPro.Android</string>
+  <string-array name="plugins_array">
+    <item>Empty figure</item>
+    <item>Figure with text</item>
+    <item>Figure with image</item>
+  </string-array>
+</resources>
