@@ -34,6 +34,9 @@ namespace PaintPro.Droid
 			// aapt resource value: 0x7f050000
 			public const int plugins_array = 2131034112;
 			
+			// aapt resource value: 0x7f050001
+			public const int type_array = 2131034113;
+			
 			static Array()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -97,38 +100,50 @@ namespace PaintPro.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060002
-			public const int btnImageAddTab = 2131099650;
-			
-			// aapt resource value: 0x7f060005
-			public const int btnImageDrawing = 2131099653;
-			
-			// aapt resource value: 0x7f060007
-			public const int btnImageLoad = 2131099655;
-			
-			// aapt resource value: 0x7f060008
-			public const int btnImageSave = 2131099656;
+			// aapt resource value: 0x7f060003
+			public const int btnImageAddTab = 2131099651;
 			
 			// aapt resource value: 0x7f060006
-			public const int btnImageSetting = 2131099654;
+			public const int btnImageDrawing = 2131099654;
 			
-			// aapt resource value: 0x7f060001
-			public const int imageButtonLeftMenu = 2131099649;
+			// aapt resource value: 0x7f060008
+			public const int btnImageLoad = 2131099656;
 			
 			// aapt resource value: 0x7f060009
-			public const int item1 = 2131099657;
+			public const int btnImageSave = 2131099657;
+			
+			// aapt resource value: 0x7f060007
+			public const int btnImageSetting = 2131099655;
+			
+			// aapt resource value: 0x7f060002
+			public const int imageButtonLeftMenu = 2131099650;
+			
+			// aapt resource value: 0x7f06000d
+			public const int item1 = 2131099661;
+			
+			// aapt resource value: 0x7f06000e
+			public const int item2 = 2131099662;
+			
+			// aapt resource value: 0x7f060001
+			public const int linearLayout1 = 2131099649;
 			
 			// aapt resource value: 0x7f06000a
-			public const int item2 = 2131099658;
+			public const int linearLayout2 = 2131099658;
+			
+			// aapt resource value: 0x7f06000b
+			public const int linearLayout3 = 2131099659;
 			
 			// aapt resource value: 0x7f060000
-			public const int linearLayout1 = 2131099648;
+			public const int pDraw = 2131099648;
+			
+			// aapt resource value: 0x7f060005
+			public const int relativeLayout1 = 2131099653;
 			
 			// aapt resource value: 0x7f060004
-			public const int relativeLayout1 = 2131099652;
+			public const int spPlugins = 2131099652;
 			
-			// aapt resource value: 0x7f060003
-			public const int spPlugins = 2131099651;
+			// aapt resource value: 0x7f06000c
+			public const int spType = 2131099660;
 			
 			static Id()
 			{
@@ -144,10 +159,13 @@ namespace PaintPro.Droid
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int Draw = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int popup_menu = 2130903041;
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int popup_menu = 2130903042;
 			
 			static Layout()
 			{
@@ -164,6 +182,9 @@ namespace PaintPro.Droid
 			
 			// aapt resource value: 0x7f040000
 			public const int plugins_prompt = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int type_prompt = 2130968577;
 			
 			static String()
 			{

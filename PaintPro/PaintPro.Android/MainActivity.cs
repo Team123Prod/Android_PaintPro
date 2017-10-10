@@ -18,13 +18,15 @@ namespace PaintPro.Droid
         ImageButton btnImageLoad;
         ImageButton btnImageSetting;
 
+        XData_Android data = new XData_Android();
+
         protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
-
+            FindViewById<PDraw>(Resource.Id.pDraw).data = data;
             SetSpinnersListeners();
 
             btnMenuLeft = FindViewById<ImageButton>(Resource.Id.imageButtonLeftMenu);
@@ -47,6 +49,14 @@ namespace PaintPro.Droid
             spPlugins.Adapter = adapterP;
 
             spPlugins.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
+
+            Spinner spType = FindViewById<Spinner>(Resource.Id.spType);
+
+            var adapterT = ArrayAdapter.CreateFromResource(this, Resource.Array.type_array, Android.Resource.Layout.SimpleSpinnerItem);
+            adapterT.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
+            spType.Adapter = adapterT;
+
+            spType.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
         }
 
         private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
@@ -65,6 +75,21 @@ namespace PaintPro.Droid
                         break;
                     case "Figure with image":
                         Toast.MakeText(this, string.Format("Figure with image"), ToastLength.Short).Show();
+                        break;
+                }
+            }
+            else if (spinner.Id == Resource.Id.spType)
+            {
+                switch (spinner.SelectedItem.ToString())
+                {
+                    case "Line":
+                        data.Type = Figure.FigureType.Line;
+                        break;
+                    case "Ellipse":
+                        data.Type = Figure.FigureType.Ellipse;
+                        break;
+                    case "Rectangle":
+                        data.Type = Figure.FigureType.Rect;
                         break;
                 }
             }
